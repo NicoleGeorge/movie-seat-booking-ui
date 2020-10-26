@@ -16,10 +16,12 @@ function updateSelectedCount() {
   // 2. Map through the array
   //  3. Return a new array indexes
   // - use the spread operator to copy elements of the array
+  // 4. save to local storage
 
   const seatsIndex = [...selectedSeats].map((seat) => [...seats].indexOf(seat));
-
   // console.log(seatsIndex);
+
+  localStorage.setItem('selectedSeats', JSON.stringify(seatsIndex));
 
   const selectedSeatsCount = selectedSeats.length;
   // console.log(selectedSeatsCount); counting single seat numbers
