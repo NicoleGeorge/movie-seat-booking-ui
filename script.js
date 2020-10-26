@@ -4,7 +4,7 @@ const count = document.getElementById('count');
 const total = document.getElementById('total');
 const movieSelect = document.getElementById('movie');
 
-const ticketPrice = +movieSelect.value; /* logs the movie datat type */
+let ticketPrice = +movieSelect.value; /* logs the movie datat type */
 
 // updating the seat count & total
 function updateSelectedCount() {
@@ -16,7 +16,14 @@ function updateSelectedCount() {
   total.innerText = selectedSeatsCount * ticketPrice;
 }
 
-// Event Listener
+// Movie select - Event Listener
+
+movieSelect.addEventListener('change', (e) => {
+  ticketPrice = +e.target.value;
+  updateSelectedCount();
+});
+
+// Event Listener - Seat click event
 container.addEventListener('click', (e) => {
   //   console.log(e.target);
   if (
