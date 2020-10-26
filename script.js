@@ -10,6 +10,14 @@ let ticketPrice = +movieSelect.value; /* logs the movie datat type */
 function updateSelectedCount() {
   const selectedSeats = document.querySelectorAll('.row .seat.selected');
   // console.log(selectedSeats); counting Node List
+
+  // Set to local storage blueprint:
+  // 1. Copy selected seats into an array
+  // 2. Map through the array
+  //  3. Return a new array indexes
+  // - use the spread operator to do this
+
+
   const selectedSeatsCount = selectedSeats.length;
   // console.log(selectedSeatsCount); counting single seat numbers
   count.innerText = selectedSeatsCount;
