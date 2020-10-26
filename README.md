@@ -13,3 +13,8 @@
 
 Design inspiration from [Dribbble](https://dribbble.com/shots/3628370-Movie-Seat-Booking)
 
+## Screenshots of Project
+
+<a href="#" rel="nofollow"><img height="120" src="https://github.com/NicoleGeorge/movie-seat-booking-ui/blob/main/justiceLeague.png" style="max-width:100%;" target="_blank"></a>
+
+<a href="#" rel="nofollow"><img height="120" src="https://github.com/NicoleGeorge/movie-seat-booking-ui/blob/main/birdsOfPrey.png" style="max-width:100%;" target="_blank"></a>
