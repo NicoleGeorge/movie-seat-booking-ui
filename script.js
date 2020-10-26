@@ -17,11 +17,9 @@ function updateSelectedCount() {
   //  3. Return a new array indexes
   // - use the spread operator to copy elements of the array
 
-  const seatsIndex = [...selectedSeats].map((seat) => {
-    return [...seats].indexOf(seat);
-  });
+  const seatsIndex = [...selectedSeats].map((seat) => [...seats].indexOf(seat));
 
-  console.log(seatsIndex);
+  // console.log(seatsIndex);
 
   const selectedSeatsCount = selectedSeats.length;
   // console.log(selectedSeatsCount); counting single seat numbers
